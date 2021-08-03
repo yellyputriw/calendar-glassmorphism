@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(45deg, #d1c6f3, #e9bcac);
+  overflow: hidden;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #e9bcac85 0%, rgba(219, 238, 238, 0) 53%, rgba(219, 238, 238, 0.2) 73%, #e9bcac85 100%);
+  border-radius: 50%;
+  -webkit-transform: translate(-250px, -120px);
+          transform: translate(-250px, -120px);
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, #d1c6f385 0%, rgba(219, 238, 238, 0) 53%, rgba(219, 238, 238, 0.2) 73%, #d1c6f385 100%);
+  border-radius: 50%;
+  -webkit-transform: translate(250px, 120px);
+          transform: translate(250px, 120px);
+}
+
+section .box {
+  position: relative;
+  z-index: 1000;
+}
+
+section .box .container {
+  position: relative;
+  width: 400px;
+  min-height: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .box .container #dycalendar {
+  width: 100%;
+  padding: 20px;
+}
+
+section .box .container #dycalendar table {
+  width: 100%;
+  margin-top: 40px;
+  border-spacing: 5px;
+}
+
+section .box .container #dycalendar table td {
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+section .box .container #dycalendar table td:hover {
+  background: #fff;
+  color: #111 !important;
+}
+
+section .box .container #dycalendar table tr:nth-child(1) td {
+  color: #202040;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date {
+  color: #7a6f9c !important;
+  background-color: #fff !important;
+}
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.prev-btn {
+  color: #202040 !important;
+  width: 44px;
+  height: 38px;
+  left: 4px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+}
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn {
+  color: #202040 !important;
+  width: 44px;
+  height: 38px;
+  right: 4px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+}
+
+.dycalendar-month-container .dycalendar-span-month-year {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+@media (max-width: 375px) {
+  section .box .container #dycalendar {
+    padding: 10px;
+  }
+  section .box .container {
+    width: 285px;
+    min-height: 350px;
+  }
+  section .box .container #dycalendar table {
+    margin-top: 25px;
+  }
+  section .box .container #dycalendar table td {
+    padding: 5px;
+  }
+  .dycalendar-month-container .dycalendar-span-month-year {
+    font-size: 1rem;
+  }
+  .dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn,
+  .dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.prev-btn {
+    width: 35px;
+    height: 35px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
